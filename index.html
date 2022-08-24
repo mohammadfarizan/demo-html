@@ -4,64 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo-HTML</title>
+    <title>Demo HTML</title>
   </head>
   <body>
     <nav>
       <div class="name">
-        <h1>Mohammad farizan</h1>
+        <h1>Mohammad Farizan</h1>
       </div>
-      <div class="Menu">
+      <div class="menu">
         <ul>
-          <li><a href="/About/">About</a></li>
-          <li><a href="/Portfolio/">Portfolio</a></li>
-          <li><a href="/Contact/">Contact</a></li>
-          <li><a href="/Resume/">Resume</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/resume">Resume</a></li>
         </ul>
       </div>
     </nav>
+
     <header>
-      <div class="Profile">
+      <div class="profile">
         <img
-          src="Profile-picture.jpeg"
+          src="profile-picture.jpeg"
           alt="Profile Picture"
           width="50"
           height="65"
         />
       </div>
-      <p>hi there! welcome to farizan's personal website</p>
+      <p>Hi there! Welcome to Farizan's personal website</p>
     </header>
+
     <main>
-      <div class="AboutMe">
+      <div class="about-me">
         <h2>About Me</h2>
         <p>
-          My name is mohammad farizan. I am currently a student in computer
+          My name is mohammad Farizan. I am currently a student in computer
           science.
         </p>
       </div>
-      <div class="MySkills">
+      <div class="my-skills">
         <h2>My Skills</h2>
         <p>
-          as a webdeveloper, I can help you with creating a UI design or
+          As a web developer, I can help you with creating a UI design or
           implement your own design to become a fully responsive website.
         </p>
-        <p>here are my skills</p>
-        <div class="SkillsLogo">
+        <p>Here are my skills</p>
+        <div class="skills">
           <img src="" alt="HTML" />
           <img src="" alt="CSS" />
           <img src="" alt="JavaScript" />
         </div>
       </div>
-      <div class="GetinTouch">
+
+      <div class="contact">
         <h2>Get in Touch</h2>
         <form>
+          <div>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="Name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+            />
+          </div>
+          <label for="email">Email</label>
           <input
-            name="Name"
-            type="text"
-            class="feedback-input"
-            placeholder="Name"
-          />
-          <input
+            id="email"
             name="Email"
             type="text"
             class="feedback-input"
@@ -79,15 +88,22 @@
             class="feedback-input"
             placeholder="Phone Number"
           />
-          <textarea
-            name="Text"
-            class="feedback-input"
-            placeholder="Message"
-          ></textarea>
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="Text"
+              class="feedback-input"
+              placeholder="Insert your message here"
+              rows="5"
+              cols="30"
+            ></textarea>
+          </div>
           <input type="Submit" value="Submit" />
         </form>
       </div>
     </main>
+
     <footer>
       <p>Created by Mohammad Farizan</p>
     </footer>
